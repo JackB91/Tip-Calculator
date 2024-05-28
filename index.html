@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tip-app">
+      <h1>SPLI<br />TTER</h1>
+      <div class="container-content">
+        <div class="option-container">
+          <form class="form-element">
+            Bill
+            <input class="bill-amt" type="number" placeholder="0.00" />
+          </form>
+          <div class="tip-select">
+            <h2>Select Tip %</h2>
+            <div class="grid-container">
+              <div class="grid-item tip_percent">5%</div>
+              <div class="grid-item tip_percent">10%</div>
+              <div class="grid-item tip_percent">15%</div>
+              <div class="grid-item tip_percent">25%</div>
+              <div class="grid-item tip_percent">50%</div>
+              <input
+                class="custom-amt tip%"
+                type="number"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <form class="form-element">
+            <h2>Number of People</h2>
+            <input class="num-ppl" type="number" placeholder="1" />
+          </form>
+        </div>
+
+        <!-- 
+total section -->
+
+        <div class="total-container">
+          <div class="tip-amt">
+            <h3><span class="tip-total">Tip Amount</span> <br />/person</h3>
+            <p class="tipsum">$0.00</p>
+          </div>
+
+          <div class="total-amt">
+            <h3><span class="tip-total">Total</span> <br />/person</h3>
+            <p class="total-person">$0.00</p>
+          </div>
+
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

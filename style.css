@@ -1,0 +1,213 @@
+html {
+    font-size: 62.5%;
+    font-family: "space mono", sans-serif; 
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(184, 14%, 56%);
+    font-weight: bold;
+   
+   
+}
+
+.tip-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+
+    border: 1px solid black;
+    }
+
+h1 {
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 1rem;
+}
+
+h2 {
+    font-size: .8rem;
+margin-bottom: 0;
+}
+
+
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid black;
+    height: 100%;
+   
+}
+
+@media screen and (min-width:1440px ) {
+    .container-content {
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width:1440px ) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+}
+
+
+.grid-item {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+    text-align: center;
+    padding: .15rem;
+    margin: .25rem;
+    border-radius: 3px; 
+         
+}
+
+.grid-item:hover {
+    cursor: pointer;
+   background-color:  hsl(185, 41%, 84%);
+   color: hsl(183, 100%, 15%);
+   
+}
+
+
+/* input styling */
+
+input {
+    background-color:hsl(189, 41%, 97%);
+    border: 0;
+    color: hsl(184, 14%, 56%);
+    border-radius: 3px;
+    max-width: 96%;
+    text-align: right;
+    padding: .5rem 1rem .5rem 0rem;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-family: "space mono", sans-serif; 
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-family: "space mono", sans-serif; 
+}
+
+.custom-amt {
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    font-weight: bold; 
+    padding: 0; 
+    margin: .1rem .35rem 0 .35rem;
+
+}
+
+.custom-amt::placeholder {
+    color: hsl(186, 14%, 43%);
+}
+
+
+.bill-amt {
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: .5rem;
+    background-position: 8px center;
+
+}
+
+.num-ppl {
+    background-image: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-size: .5rem;
+    background-position: 8px center;
+
+}
+
+/* total section */
+.total-container {
+    background-color:hsl(183, 100%, 15%) ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 1rem;
+
+}
+
+
+.tip-total {
+    color: hsl(0, 0%, 100%) ;
+}
+
+.tip-amt, .total-amt  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+    padding-top: .2rem;
+    padding-bottom: 0;
+    font-size: .8rem;
+}
+
+
+
+
+
+button {
+    color: hsl(183, 100%, 15%);
+    font-family: "space mono", sans-serif; 
+    font-weight: bold;
+    background-color: hsl(172, 67%, 45%);
+    margin: 1rem;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+}
+
+p {
+    font-size: 1.2rem;
+    color: hsl(172, 67%, 45%);
+}
+/* 
+changing colours when clicked */
+
+.clicked {
+    background-color:  hsl(185, 41%, 84%);
+   color: hsl(183, 100%, 15%);
+}
+
+
+/* TODO add a active sate class and use js to apply it whne clicked */
+
+
+
