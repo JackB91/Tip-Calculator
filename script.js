@@ -60,6 +60,8 @@ function workout() {
   }
 }
 
+workout();
+
 function resetButton() {
   bill = 0;
   numpeople = 1;
@@ -80,4 +82,3 @@ function changeBtnColour() {
 }
 
 tip.addEventListener("click", changeBtnColour);
-workout();
