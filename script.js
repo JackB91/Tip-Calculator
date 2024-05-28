@@ -77,8 +77,9 @@ function resetButton() {
 }
 reset.addEventListener("click", resetButton);
 
-function changeBtnColour() {
-  tip.classList.toggle("clicked");
-}
+// TODO:
+// function changeBtnColour() {
+//   tip.classList.toggle("clicked");
+// }
 
-tip.addEventListener("click", changeBtnColour);
+// tip.addEventListener("click", changeBtnColour);
